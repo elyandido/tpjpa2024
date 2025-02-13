@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Achat de Ticket</title>
+</head>
+<body>
+<h1>Achat de Ticket</h1>
+<form method="POST" action="/tickets">
+    ID Utilisateur: <input type="number" name="userId" required><br>
+    ID Événement: <input type="number" name="eventId" required><br>
+    Prix: <input type="number" step="0.01" name="price" required><br>
+    Statut: <select name="statut">
+    <option value="DISPONIBLE">Disponible</option>
+    <option value="VENDU">Vendu</option>
+</select><br>
+    Type Ticket: <select name="typeTicket">
+    <option value="PREMIUM">Premium</option>
+    <option value="LAST_MINUTE">Last Minute</option>
+</select><br>
+    <input type="submit" value="Acheter">
+</form>
+</body>
+</html>
